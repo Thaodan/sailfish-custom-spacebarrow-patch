@@ -1,0 +1,2 @@
+#+TITLE: Custom Spacebarrow
+this patch adds !,?, and ' key to the . button. 
