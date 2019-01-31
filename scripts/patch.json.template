@@ -1,0 +1,8 @@
+{
+    "name": "@NAME@",
+    "description": "@DESCRIPTION@",
+    "category": "@CATEGORY@",
+    "infos": {
+        "maintainer": "@MAINTAINER@"
+    }
+}
