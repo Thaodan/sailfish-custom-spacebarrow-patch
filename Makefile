@@ -7,7 +7,7 @@ INSTALL    	= /usr/bin/install
 SHPP		= /usr/bin/shpp
 install_files   = $(DIST_ROOT)/scripts/install_files
 diff_root 	= to_diff
-DESTDIR =
+DESTDIR 	?=
 installdir 	:= $(DESTDIR)/usr/patchmanager/patches
 include 	project.mk
 all: $(TARGET)
