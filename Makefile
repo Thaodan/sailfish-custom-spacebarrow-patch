@@ -41,5 +41,6 @@ patch.json: $(DIST_ROOT)/scripts/patch.json.template
 clean:
 	rm  -f $(TARGET)
 	rm -rf $(diff_root)
-
+	rm -rf patch.spec
+	rm -rf patch.json
 .PHONY: clean install
