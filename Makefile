@@ -20,9 +20,9 @@ $(TARGET): $(orig) $(patched)
 	 $(install_files) -r ../$(diff_root)/$(patched) ../dir.install
 	cd $(diff_root) ; \
 	$(DIFF) $(orig) $(patched) > ../$@|| exit 0
-install:
+install: $(TARGET) patch.json
 	$(INSTALL) -m644 $(TARGET) $(installdir)/$(NAME)/$(TARGET)
-
+	$(INSTALL) -m644 patch.json $(installdir)/$(NAME)/patch.json
 patch.spec:  $(DIST_ROOT)/scripts/template.spec
 	$(SHPP) -DNAME=$(NAME) \
 		-DVER=$(VER) \
